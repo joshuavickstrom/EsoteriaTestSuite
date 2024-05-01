@@ -9,6 +9,7 @@ using static EsoteriaTestSuite.TarotHelper;
 using OpenQA.Selenium.DevTools.V121.SystemInfo;
 using OpenQA.Selenium.DevTools.V123.SystemInfo;
 
+
 namespace EsoteriaTestSuite
 {
 
@@ -95,7 +96,7 @@ namespace EsoteriaTestSuite
         [Test]
         public void TestHeaderMoonHover()
         {
-            element = driver.FindElement(By.Id(headerIdNavMoon));
+            element = driver.FindElement(By.ClassName("moon"));
             elementText = element.GetAttribute("title");
             Console.WriteLine(elementText); //returns contents of title that should contain moon description
 
